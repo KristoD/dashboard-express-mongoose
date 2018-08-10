@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Dog</title>
+</head>
+<body>
+
+    <h1>Edit Dog</h1>
+
+    <% if(typeof(errors) != 'undefined' ) { %>
+        <% for (var x in errors) { %>
+         <h3><%= errors[x].message %></h3>
+        <% } %>
+    <% } %>
+
+    <form action="/dogs/<%= dog.id %>" method="POST">
+        <label>Breed</label>
+        <input type="text" name="breed">
+        <label>Image</label>
+        <input type="text" name="image" placeholder="Link of image">
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>

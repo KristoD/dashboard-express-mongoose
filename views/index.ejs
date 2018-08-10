@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dog Dashboard</title>
+</head>
+<body>
+
+    <h1>Dog Dashboard</h1>
+
+    <a href="/dogs/new">Add new dog</a>
+
+    <% for(dog in dogs) { %>
+        <hr>
+        <a href="/dogs/<%= dogs[dog].id %>"><%= dogs[dog].breed %></a>
+    <% } %>
+    
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= dog.breed %></title>
+</head>
+<body>
+
+    <img src="<%= dog.image %>">
+    <p>Breed: <%= dog.breed %></p>
+    <a href="/">Go Back</a>
+    <a href="/dogs/edit/<%= dog.id %>">Edit Dog</a>
+    <a href="/dogs/destroy/<%= dog.id %>">Delete Dog</a>
+    
+</body>
+</html>
